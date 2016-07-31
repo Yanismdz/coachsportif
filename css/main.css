@@ -95,7 +95,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+*
+{
+    box-sizing:border-box;
+}
 
 
 
@@ -104,22 +107,232 @@ textarea {
 /* ##################################################################### */
 /* Extra small devices (phones, less than 641px) */
 
+/* ----------------- HEADER -------------------*/
+/* ------------------------------------------- */
 
+/* TOP BAR */
+.top-bar-right, .menu, .menu li, .menu a
+{					   
+    height:100% !important;
+    color:#fff;
+}
+
+.menu li a:hover
+{
+    background-color:#fff;
+    color:#2980b9;
+    transition:background .5s ease-in, color .5s ease-in;
+}
+
+header h3
+{
+    color:#fff;
+}
+
+.top-bar
+{
+    position:fixed;
+    z-index:10;
+    background-color: transparent;
+    width:100%;
+}
+
+.menu
+{
+    background-color: transparent !important;
+}
+
+.menu li a
+{
+    line-height:1.9375rem;
+}
+
+/* ----------------- FOOTER -------------------*/
+/* ------------------------------------------- */
+
+.footer
+{
+    margin-top:30px;
+    background-color: #2980b9;
+    padding: 2rem 4rem;
+    text-align: center;
+    color: #fff;
+}
+
+.footer .big
+{
+    font-size: 100px;
+}
+
+.footer .litle
+{
+    margin-right:8px;
+}
+
+.footer h4
+{
+    color: #fff;
+    font-size: 1em;    
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.footer p, .footer a
+{
+    font-weight: 300;
+    font-size: .8em;
+    color: #fff;
+}
+
+@media only screen and (min-width: 40.063em)
+{
+
+    .footer .columns:nth-child(n+2)
+      {		 
+	  border-left: 1px solid #b3b3b3;
+	  min-height: 280px;
+      }
+}
+
+.footer-links
+{
+    list-style-type: none;
+}
+
+.footer-links li
+{
+    margin-top: .5em;
+}
+
+/* ------------INDEX.HTML---------- */
+
+/* CAROUSEL */
+.orbit
+{    
+    position:absoluite;
+    top:0;
+}
+
+.orbit-container, .orbit-slide
+{
+    height:40vh;
+}
+
+.orbit-slide
+{
+    vertical-align:top;
+}
+
+/* SECTION 1 */
+img
+{
+    display:block;
+}
+
+.scrolled
+{
+    background-color:#2980b9;
+}
+.section1
+{
+    font-size:1.15em;
+    color:white;
+    background-color:grey;
+    padding:15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.full-width
+{
+    max-width: 1400px;
+}
+
+/* ---------- CONTACT.HTML --------- */
+
+/* HEADER */
+
+.tbc, .tbc .menu
+       {
+	       background-color: #2980b9 !important;
+       }
+
+.contact
+{
+    padding:130px 0 80px;
+}
+
+/* ---------- PRICE.HTML --------- */
+.prices
+{
+    padding:120px 0 20px;
+}
+
+.pricing-table
+{
+    border: solid 1px #DDDDDD;
+}
+
+.pricing-table li
+{
+    border-bottom: dotted 1px #DDDDDD;
+    font-size: 0.75rem;
+    padding: 0.875rem 1.125rem;
+}
+
+.pricing-table li:last-child
+		      {
+    border-bottom: 0;
+}
+
+.pricing-table .title
+{
+    background-color: #333333;
+    color: #EEEEEE;
+    font-size: 0.875rem;
+    border-bottom: 0;
+}
+
+.pricing-table .price
+{
+    background-color: #F6F6F6;
+    color: #333333;
+    font-size: 1.75rem;
+    border-bottom: 0;
+}
+
+.pricing-table .description
+{
+    color: #777777;
+    font-size: 0.625rem;
+}
+
+.pricing-table .button
+{
+    margin: 0;
+}
 
 /* ##################################################################### */
 /* ############################   TABLETS   ############################ */
 /* ##################################################################### */
 /* Small devices (tablets, 641px and up) */
-   @media (min-width: 641px) {
-
+   @media (min-width: 40em) {
+       .section1
+       {
+	   margin:3% auto;
+       }
    }
 
 /* ##################################################################### */
 /* ############################   DESKTOPS   ########################### */
 /* ##################################################################### */
 /* Medium devices (desktops, 1025px and up) */
-   @media (min-width: 1025px) {
-
+   @media (min-width: 1216px) {
+       .section1
+       {
+	   border-radius:5px;
+       }
    }
 
 /* ##################################################################### */
@@ -127,7 +340,7 @@ textarea {
 /* ##################################################################### */
 /* Large devices (large desktops, 1441px and up) */
    @media (min-width: 1441px) {
-
+    
    }
 
 /* ##################################################################### */
